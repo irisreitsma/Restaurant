@@ -44,12 +44,6 @@ public class MenuItemAdapter extends ArrayAdapter<MenuItem> {
         TextView price = convertView.findViewById(R.id.price);
         price.setText("€ " + String.format("%.2f", menuItems.get(position).getPrice()));
 
-//        // dynamically set row height of grid view
-//        int screenHeight = Resources.getSystem().getDisplayMetrics().heightPixels;
-//        int screenWidth = Resources.getSystem().getDisplayMetrics().widthPixels;
-//        int itemHeight = screenHeight > screenWidth ? screenHeight / 7 : screenWidth / 7;
-//        convertView.setLayoutParams(new GridView.LayoutParams(GridView.AUTO_FIT, itemHeight));
-
         return convertView;
     }
 }
